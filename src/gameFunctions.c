@@ -5,8 +5,12 @@
 #include "gameFunctions.h"
 
 initializeBlankString() {}
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
 
 printWithSpaces() {}
+#include "gameFunctions.h"
 
 revealGuessedLetter() {}
 
