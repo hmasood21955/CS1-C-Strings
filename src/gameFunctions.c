@@ -29,6 +29,19 @@ void printWithSpaces(const char *str) {
     printf("\n");
 }
 
+int revealGuessedLetter(const char *solution, char *revealed, char guessedLetter) {
+    int changed = 0;
+    int length = strlen(solution);
+
+    for (int i = 0; i < length; i++) {
+        if (solution[i] == guessedLetter && revealed[i] == '_') {
+            revealed[i] = guessedLetter;
+            changed = 1;
+        }
+    }
+
+    return changed;
+}
 void startGame(char word[25]) {
   int won = 0;  // Flag to see if the user has won yet
   int numBadGuesses = 0;  // Counter to end the game on a lose condition
