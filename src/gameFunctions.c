@@ -42,6 +42,10 @@ int revealGuessedLetter(const char *solution, char *revealed, char guessedLetter
 
     return changed;
 }
+
+int checkGuess(const char *str1, const char *str2) {
+    return strcmp(str1, str2) == 0 ? 1 : 0;
+}
 void startGame(char word[25]) {
   int won = 0;  // Flag to see if the user has won yet
   int numBadGuesses = 0;  // Counter to end the game on a lose condition
