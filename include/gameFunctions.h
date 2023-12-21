@@ -32,3 +32,4 @@ void clearScreen();
  * the two numbers.
  */
 void drawHorse(int guessedSoFar, int allowedGuesses);
+void initializeBlankString(int length, char *str);
