@@ -1,4 +1,6 @@
 
+#ifndef GAME_FUNCTIONS_H
+#define GAME_FUNCTIONS_H
 //TODO: define, document, and implement this function
 initializeBlankString();
 
