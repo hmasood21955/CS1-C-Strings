@@ -35,3 +35,5 @@ void drawHorse(int guessedSoFar, int allowedGuesses);
 void initializeBlankString(int length, char *str);
 void printWithSpaces(const char *str);
 int revealGuessedLetter(const char *solution, char *revealed, char guessedLetter);
+int checkGuess(const char *str1, const char *str2);
+#endif 
